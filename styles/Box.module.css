@@ -1,9 +1,9 @@
 .box {
-    flex: border-box;
-;
+  flex: border-box;
 }
 .button {
-    align-items: center;
-    background-color: #EE782B;
-    border-radius: 7px;
+  background-color: #ee782b;
+  border-radius: 7px;
+  font-size: 30px;
+  color: #fff;
 }
