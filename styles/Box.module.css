@@ -9,14 +9,16 @@
   font-size: 32px;
   line-height: 39px;
   border: 0;
-
 }
 
 .icon {
-  width: 100%;
+  width: 25px;
+  margin-right: 5px;
+  background-color: transparent;
 }
 
 .border {
-  border-top: 1px;
-  border-color: white;
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
 }

@@ -1,20 +1,17 @@
-import Box from "../components/Box";
-import Box2 from "../components/Box2";
-import Box3 from "../components/Box3";
-import Box4 from "../components/Box4";
-import Box5 from "../components/Box5";
-import Head from 'next/head'
-
-
-
+import Head from "next/head";
+import Footer from '../components/footer';
+import Info from '../components/info';
+import CallToAction from '../components/call-to-action';
+import Logo from '../components/logo';
+import HeroBanner from '../components/hero-banner';
 
 export async function getServerSideProps() {
   return {
     props: {
       meta: {
-        name: 'facebook-domain-verification',
-        content: 'bfadd8mluxvoi6c1tpp82w4w38e50y'
-      }
+        name: "facebook-domain-verification",
+        content: "bfadd8mluxvoi6c1tpp82w4w38e50y",
+      },
     },
   };
 }
@@ -31,24 +28,24 @@ const Index = (props) => {
 
       <div className={"container p-3 is-mobile"}>
         <div className="block">
-          <Box />
+          <Logo />
         </div>
 
         <div className="block">
-          <Box2 />
+          <HeroBanner />
         </div>
 
         <div className="block">
-          <Box3 />
+          <CallToAction />
         </div>
 
         <div className="block">
-          <Box4 />
+          <Info/>
         </div>
 
-          <div className="block">
-              <Box5 />
-          </div>
+        <div className="block">
+          <Footer />
+        </div>
       </div>
     </>
   );
