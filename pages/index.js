@@ -2,6 +2,7 @@ import Box from "../components/Box";
 import Box2 from "../components/Box2";
 import Box3 from "../components/Box3";
 import Box4 from "../components/Box4";
+import Box5 from "../components/Box5";
 import Head from 'next/head'
 
 // import styles from 'styles/Box.module.css'
@@ -13,7 +14,7 @@ const Index = () => {
         <meta name="facebook-domain-verification" content="bfadd8mluxvoi6c1tpp82w4w38e50y" />
       </Head>
 
-      <div className={"container p-4"}>
+      <div className={"container p-3 is-mobile"}>
         <div className="block">
           <Box />
         </div>
@@ -29,6 +30,10 @@ const Index = () => {
         <div className="block">
           <Box4 />
         </div>
+
+          <div className="block">
+              <Box5 />
+          </div>
       </div>
     </>
   );

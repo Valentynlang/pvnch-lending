@@ -3,13 +3,16 @@ import styles from "../styles/Box.module.css";
 export default function () {
   return (
     <>
-      <h3>
-        Перехід на сайт для покупки білетів Przejdź do strony zakupu biletów
-      </h3>
-      <h2 className={"mb-4"}>/ goout.net</h2>
+        <div className={"columns ml-2 is-mobile"}>
+            <h4>
+                Перехід на сайт для покупки білетів <br/>
+                Przejdź do strony zakupu biletów
+            </h4>
+            <h3 className={"ml-2 mt-1"}>/    goout.net</h3>
+        </div>
       <a href="https://goout.net/pl/bilety/pvnch/ucgq/" rel="nofollow noopener">
-        <button className={`button pl-6 pr-6 ${styles.button} is-fullwidth`}>
-          BILET
+        <button className={`button pl-5 pr-5 ${styles.button} is-fullwidth`}>
+          Bilet
         </button>
       </a>
     </>
