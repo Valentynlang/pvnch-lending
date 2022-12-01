@@ -2,15 +2,36 @@ import Box from "../components/Box";
 import Box2 from "../components/Box2";
 import Box3 from "../components/Box3";
 import Box4 from "../components/Box4";
-import Head from 'next/head'
+import Head from "next/head";
 
-// import styles from 'styles/Box.module.css'
+export async function getServerSideProps() {
+  const promise = new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, 1000);
+  });
 
-const Index = () => {
+  await promise;
+
+  return {
+    props: {
+      meta: {
+        name: 'facebook-domain-verification',
+        content: 'bfadd8mluxvoi6c1tpp82w4w38e50y'
+      }
+    },
+  };
+}
+
+const Index = (props) => {
+  console.log(props);
   return (
     <>
       <Head>
-        <meta name="facebook-domain-verification" content="bfadd8mluxvoi6c1tpp82w4w38e50y" />
+        <meta
+          name="facebook-domain-verification"
+          content="bfadd8mluxvoi6c1tpp82w4w38e50y"
+        />
       </Head>
 
       <div className={"container p-4"}>
