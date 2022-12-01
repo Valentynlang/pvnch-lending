@@ -16,7 +16,6 @@ export async function getServerSideProps() {
 }
 
 const Index = (props) => {
-  console.log(props);
   return (
     <>
       <Head>

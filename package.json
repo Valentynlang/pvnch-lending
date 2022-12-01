@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node ./static-website/server.js",
+    "start": "next start",
     "prettier": "npx prettier --write ."
   },
   "keywords": [],
