@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "http-server ./static-website -p 3000",
+    "start": "http-server ./static-website -p 3000 -a 0.0.0.0",
     "prettier": "npx prettier --write ."
   },
   "keywords": [],
