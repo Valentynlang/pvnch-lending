@@ -5,13 +5,28 @@ import Box4 from "../components/Box4";
 import Box5 from "../components/Box5";
 import Head from 'next/head'
 
-// import styles from 'styles/Box.module.css'
 
-const Index = () => {
+
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      meta: {
+        name: 'facebook-domain-verification',
+        content: 'bfadd8mluxvoi6c1tpp82w4w38e50y'
+      }
+    },
+  };
+}
+
+const Index = (props) => {
   return (
     <>
       <Head>
-        <meta name="facebook-domain-verification" content="bfadd8mluxvoi6c1tpp82w4w38e50y" />
+        <meta
+          name="facebook-domain-verification"
+          content="bfadd8mluxvoi6c1tpp82w4w38e50y"
+        />
       </Head>
 
       <div className={"container p-3 is-mobile"}>
