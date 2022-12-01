@@ -5,14 +5,6 @@ import Box4 from "../components/Box4";
 import Head from "next/head";
 
 export async function getServerSideProps() {
-  const promise = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve();
-    }, 1000);
-  });
-
-  await promise;
-
   return {
     props: {
       meta: {
