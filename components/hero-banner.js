@@ -18,7 +18,7 @@ export default function HeroBanner() {
           </h2>
         </div>
         <div className={"mt-4 ml-3"}>
-          <h2>/ 60 zl</h2>
+          <h2>/ 50 zl</h2>
         </div>
       </div>
     </>
